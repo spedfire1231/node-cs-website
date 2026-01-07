@@ -1,11 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import bgImage from '../../assets/images/node.jpg'; // импортируйте картинку
 import './Home.css';
 
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <section className="hero">
+      <section 
+        className="hero" 
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${bgImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="hero-content">
           <h1 className="hero-title">Добро пожаловать на NODE</h1>
           <p className="hero-subtitle">
