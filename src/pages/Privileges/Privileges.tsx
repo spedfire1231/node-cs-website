@@ -129,7 +129,7 @@ const Privileges: React.FC = () => {
     }
     
     const paymentMethod = paymentMethods.find(pm => pm.name === selectedPaymentMethod);
-    alert(`Вы выбрали ${privilegeName} на ${period.label} за ${period.price} грн\n\nСпособ оплаты: ${selectedPaymentMethod}\nДля оплаты используйте карту: ${paymentMethod?.cardNumber}\nВ примечении укажите Ваш Steam ID или никнейм.`);
+    alert(`Вы выбрали ${privilegeName} на ${period.label} за ${period.price} грн\n\nСпособ оплаты: ${selectedPaymentMethod}\nДля оплаты используйте карту: ${paymentMethod?.cardNumber}\nВ примечении укажите Ваш Steam ID или никнейм и также желаемый пароль доступа.`);
   };
 
   return (
