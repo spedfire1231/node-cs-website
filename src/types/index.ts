@@ -28,3 +28,16 @@ export interface Privilege {
 }
 
 export type PrivilegeType = 'vip' | 'admin' | 'boss';
+
+export interface NewsItem {
+  id: string;
+  title: string;
+  content: string;
+  excerpt: string;
+  author: string;
+  createdAt: string;
+  updatedAt: string;
+  tags: string[];
+  image?: string;
+  published: boolean;
+}

@@ -6,12 +6,13 @@ const Navigation: React.FC = () => {
   const location = useLocation();
   
   const navItems = [
-    { path: '/', label: 'Главная' },
-    { path: '/servers', label: 'Серверы' },
-    { path: '/rules', label: 'Правила' },
-    { path: '/privileges', label: 'Привилегии' },
-    { path: '/contacts', label: 'Контакты' }
-  ];
+  { path: '/', label: 'Главная' },
+  { path: '/servers', label: 'Серверы' },
+  { path: '/news', label: 'Новости' }, // Добавьте это
+  { path: '/rules', label: 'Правила' },
+  { path: '/privileges', label: 'Привилегии' },
+  { path: '/contacts', label: 'Контакты' }
+];
 
   return (
     <nav className="navigation">

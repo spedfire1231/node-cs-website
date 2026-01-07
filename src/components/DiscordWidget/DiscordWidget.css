@@ -1,0 +1,38 @@
+.discord-widget {
+  background: linear-gradient(135deg, #5865f2, #7289da);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 10px 30px rgba(88, 101, 242, 0.3);
+}
+
+.discord-widget h3 {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.discord-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.discord-join-btn {
+  display: block;
+  background-color: #5865f2;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.discord-join-btn:hover {
+  background-color: #7289da;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(88, 101, 242, 0.4);
+}

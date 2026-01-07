@@ -1,0 +1,93 @@
+/* Зимняя тема */
+[data-theme="winter"] {
+  --primary-color: #4a90e2;
+  --secondary-color: #87ceeb;
+  --bg-color: #f0f8ff;
+  --bg-secondary: #e6f3ff;
+  --text-color: #2c3e50;
+  --text-secondary: #34495e;
+  --border-color: #b0d4f1;
+  --shadow-color: rgba(74, 144, 226, 0.3);
+  
+  /* Зимние градиенты */
+  --winter-gradient: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%);
+  
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.8) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(135, 206, 235, 0.3) 0%, transparent 30%);
+}
+
+/* Зимние элементы */
+[data-theme="winter"] .snowflake {
+  position: fixed;
+  top: -10px;
+  z-index: 9999;
+  user-select: none;
+  pointer-events: none;
+  color: white;
+  font-size: 1em;
+  animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+[data-theme="winter"] .navigation {
+  background: linear-gradient(135deg, #4a90e2, #87ceeb);
+  border-bottom: 3px solid #b0d4f1;
+}
+
+[data-theme="winter"] .hero {
+  background: var(--winter-gradient);
+  position: relative;
+}
+
+[data-theme="winter"] .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="20">❄️</text></svg>');
+  background-size: 50px 50px;
+  opacity: 0.1;
+  animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+  0% { transform: translateY(-100px); }
+  100% { transform: translateY(100px); }
+}
+
+/* Зимняя анимация для кнопок */
+[data-theme="winter"] .cta-button {
+  background: linear-gradient(135deg, #4a90e2, #87ceeb);
+  box-shadow: 0 5px 20px rgba(74, 144, 226, 0.4);
+}
+
+[data-theme="winter"] .cta-button:hover {
+  box-shadow: 0 8px 30px rgba(74, 144, 226, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Зимние карточки */
+[data-theme="winter"] .privilege-card,
+[data-theme="winter"] .news-card,
+[data-theme="winter"] .server-card {
+  background: linear-gradient(135deg, #ffffff, #f8fbff);
+  border: 2px solid #b0d4f1;
+  box-shadow: 0 10px 30px rgba(74, 144, 226, 0.15);
+}
+
+[data-theme="winter"] .privilege-card:hover,
+[data-theme="winter"] .news-card:hover {
+  border-color: #4a90e2;
+  box-shadow: 0 15px 40px rgba(74, 144, 226, 0.25);
+}

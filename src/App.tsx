@@ -6,6 +6,9 @@ import Servers from './pages/Servers';
 import Rules from './pages/Rules';
 import Privileges from './pages/Privileges';
 import Contacts from './pages/Contacts';
+import News from './pages/News'; // Добавьте импорт
+import ThemeToggle from './components/ThemeToggle/ThemeToggle';
+import SnowEffect from './components/SnowEffect/SnowEffect';
 import './App.css';
 
 function App() {
@@ -16,6 +19,8 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/news/:id" element={<News />} />
             <Route path="/servers" element={<Servers />} />
             <Route path="/rules" element={<Rules />} />
             <Route path="/privileges" element={<Privileges />} />

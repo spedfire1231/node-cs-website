@@ -104,3 +104,78 @@ body {
     font-size: 32px;
   }
 }
+
+:root {
+  --primary-color: #ff6b35;
+  --secondary-color: #ff8c42;
+  --bg-color: #1a1a1a;
+  --bg-secondary: #2c2c2c;
+  --text-color: #ffffff;
+  --text-secondary: #cccccc;
+  --border-color: #444;
+  --shadow-color: rgba(255, 107, 53, 0.3);
+}
+
+[data-theme="light"] {
+  --primary-color: #ff6b35;
+  --secondary-color: #ff8c42;
+  --bg-color: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --border-color: #ddd;
+  --shadow-color: rgba(255, 107, 53, 0.2);
+}
+
+/* CSS переменные для тем */
+:root {
+  --primary-color: #ff6b35;
+  --secondary-color: #ff8c42;
+  --bg-color: #1a1a1a;
+  --bg-secondary: #2c2c2c;
+  --text-color: #ffffff;
+  --text-secondary: #cccccc;
+  --border-color: #444;
+  --shadow-color: rgba(255, 107, 53, 0.3);
+}
+
+/* Светлая тема */
+[data-theme="light"] {
+  --primary-color: #ff6b35;
+  --secondary-color: #ff8c42;
+  --bg-color: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --border-color: #ddd;
+  --shadow-color: rgba(255, 107, 53, 0.2);
+}
+
+/* Зимняя тема */
+[data-theme="winter"] {
+  --primary-color: #4a90e2;
+  --secondary-color: #87ceeb;
+  --bg-color: #f0f8ff;
+  --bg-secondary: #e6f3ff;
+  --text-color: #2c3e50;
+  --text-secondary: #34495e;
+  --border-color: #b0d4f1;
+  --shadow-color: rgba(74, 144, 226, 0.3);
+}
+
+/* Применяем переменные */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation {
+  background-color: var(--bg-secondary);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  box-shadow: 0 5px 20px var(--shadow-color);
+}
