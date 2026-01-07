@@ -1,0 +1,136 @@
+.server-card {
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px solid #444;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.server-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b35, #ff8c42);
+}
+
+.server-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff6b35;
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+.server-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.server-header h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.online {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status.offline {
+  background-color: #f44336;
+  color: white;
+}
+
+.server-info {
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #444;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #888;
+  font-size: 14px;
+}
+
+.value {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.server-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.copy-ip-btn, .connect-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.copy-ip-btn {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  border: 2px solid #555;
+}
+
+.copy-ip-btn:hover {
+  background-color: #4c4c4c;
+  border-color: #ff6b35;
+}
+
+.connect-btn {
+  background-color: #ff6b35;
+  color: white;
+}
+
+.connect-btn:hover {
+  background-color: #ff8c42;
+  transform: scale(1.05);
+}
+
+/* Player count progress bar */
+.players-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #444;
+  border-radius: 3px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.players-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
